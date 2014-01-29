@@ -4,5 +4,6 @@
     <string name="app_name">Puch In Out</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_sample1_java">Sample1Java</string>
 
 </resources>

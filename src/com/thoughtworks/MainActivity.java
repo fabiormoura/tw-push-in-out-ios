@@ -42,7 +42,11 @@ public class MainActivity extends Activity {
 		// the image
 		_path = Environment.getExternalStorageDirectory()
 				+ "/make_machine_example.jpg";
-		// _image = ( ImageView ) findViewById( R.id.image );
+		
+		if (new File(_path).exists()) {
+			onPhotoTaken();
+		}
+
 		final Button button = (Button) findViewById(R.id.btnOpenCamera);
 		_field = (EditText) findViewById(R.id.txtOCRResult);
 		button.setOnClickListener(new View.OnClickListener() {
